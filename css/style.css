@@ -1,0 +1,12 @@
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}

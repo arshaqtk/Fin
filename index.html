@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/Fin-green.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+
+<!-- home section -->
+    <header class="bg-[#35736E]">         
+        <nav class="wrapper flex items-center justify-between h-[100px]">
+            <div>
+                <img src="images/logo.png" alt="" class="w-[40px]">
+            </div>
+            <div class="nav-links transform ease-in  absolute  top-[-100%] left-0 bg-[#35736E] w-full flex flex-col gap-5  items-center md:static md:flex-row justify-end">
+                <ul class="flex flex-col items-center gap-5 md:flex-row md:justify-between">
+                    <li class="text-[14px] font-normal text-white "><a href="#" class="border-b-4 border-[#FFD748]">Home</a></li>
+                    <li class="text-[14px] font-normal text-white md:ml-3"><a href="#about" class="hover:border-b-4 border-[#FFD748]">About us</a></li>
+                    <li class="text-[14px] font-normal text-white md:ml-3"><a href="#services" class="hover:border-b-4 border-[#FFD748]" >Services</a></li>
+                    <li class="text-[14px] font-normal text-white md:ml-3"><a href="#blog" class="hover:border-b-4 border-[#FFD748]">Blog</a></li>
+                    <li class="text-[14px] font-normal text-white md:ml-3"><a href="#contact" class="hover:border-b-4 border-[#FFD748]">Contact us</a></li>
+                </ul>
+                <ul class="hidden md:flex justify-end items-center">
+                    <li><a href="#"><img src="images/user.png" alt="image" class="w-[25px]"></a></li>
+                    <li><a href="#"><img src="images/cart.png" alt="" class="w-[25px] ml-3"></a></li>
+                </ul>
+            </div>
+            <div class="md:hidden text-3xl cursor-pointer">
+                <ion-icon onclick="ontogglemenu(this)" name="menu"></ion-icon>
+            </div>      
+        </nav>
+        <section class="home wrapper mt-0  py-10 sm:flex justify-center items-center">
+            <div class="mt-10 w-[full] sm:w-[40%] pl-10">
+                <h1 class="text-white text-[40px] font-bold">"Transform your space <br> with elegance."</h1>
+                <div class="py-20">
+                    <a href="#shop-now" class="px-5 py-2 md:px-3 lg:px-5 bg-[#FFD748] rounded-full text-[16px] font-medium">Shop Now</a>
+                    <a href="#explore" class="px-8 py-2 md:px-5 lg:px-8 ml-3 border border-white text-[16px] rounded-full font-medium">Explore</a>
+                </div>
+            </div>
+            <div class="w-[full] md:w-[50%] flex justify-start items-center">
+                <img src="images/home-right.png" alt="" class="w-[full]">
+            </div>
+        </section>
+    </header>
+
+<!-- Products section-->
+    <section class="py-20 bg-[#eff3f2]" id="shop-now">
+        <section class="wrapper md:w-[80%] m-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="mt-10 lg:mt-0 col-span-1 ">
+                <h3 class="text-[32px] font-semibold">Crafted with <br>excellent <br> material</h3>
+                <p class="text-[16px] font-normal text-[#8B8E99] mb-5">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done</p>
+                <a href="#" class="px-10 py-2  bg-[#35736E] rounded-full text-[16px] font-normal text-white">Explore</a>
+            </div>
+            <div class="mt-20 lg:mt-0 col-span-1 ml-5 cursor-pointer hover:scale-110">
+                <div class="bg-[#dee3e6] relative rounded-xl h-[250px] w-[250px]">
+                    <div class="absolute mt-[-70px] text-center">
+                    <img src="images/product-1.png" alt="Modern chair" class="w-[70%] m-auto">
+                    <p class="text-[16px] font-semibold mt-3">Modern chair</p>
+                    <p class="text-[16px] font-semibold">$60.00</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="mt-20 lg:mt-0 col-span-1 ml-5 cursor-pointer hover:scale-110">
+                <div class="bg-[#dee3e6] relative rounded-xl h-[250px] w-[250px]">
+                    <div class="absolute mt-[-70px] text-center">
+                    <img src="images/product-2.png" alt="Kruzo Aero chair" class="w-[90%] m-auto">
+                    <p class="text-[16px] font-semibold mt-3">Kruzo Aero chair</p>
+                    <p class="text-[16px] font-semibold">$78.00</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="mt-20 lg:mt-0 col-span-1 ml-5 cursor-pointer hover:scale-110">
+                <div class="bg-[#dee3e6] relative rounded-xl h-[250px] w-[250px]">
+                    <div class="absolute mt-[-70px] text-center">
+                    <img src="images/product-3.png" alt="Ergnomic chair" class="w-[65%] m-auto">
+                    <p class="text-[16px] font-semibold mt-3">Ergnomic chair</p>
+                    <p class="text-[16px] font-semibold">$88.00</p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+    </section>
+
+
+<!-- About section -->
+    <section class="py-10 bg-[#eff3f2]">
+        <section class="w-[80%] m-auto" id="about">
+            <div class="lg:flex justify-between items-center">
+                <div class="w-[full]">
+                    <div>
+                        <h3 class="text-[32px] md:text-[38px] font-semibold">Why Choose Us</h3>
+                         <p class="text-[16px] font-normal text-[#8B8E99] mb-5">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla <br> vivethe as it was for us to know what was to be done. the</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="col-span-1">
+                            <div class="bg-[#dee3e6] relative rounded-full h-[35px] w-[40px] ml-5 mt-10">
+                                <div class="absolute ml-[-20px] mt-[-15px] w-[50px]">
+                                    <img src="images/Truck.png" alt="truck img" class="">
+                                </div>
+                            </div>
+                            <h3 class="text-[16px]  font-semibold mb-5">Fast&Free Shipping</h3>
+                            <p class="text-[14px] font-normal text-[#8B8E99]">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla  vivethe as it was</p>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="bg-[#dee3e6] relative rounded-full h-[35px] w-[40px] ml-5 mt-10">
+                                <div class="absolute ml-[-20px] mt-[-15px] w-[50px]">
+                                    <img src="images/Shop-bag.png" alt="truck img" class="p-2">
+                                </div>
+                            </div>
+                            <h3 class="text-[16px]  font-semibold mb-5">Easy to Shop</h3>
+                            <p class="text-[14px] font-normal text-[#8B8E99]">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla  vivethe as it was</p>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="bg-[#dee3e6] relative rounded-full h-[35px] w-[40px] ml-5 mt-10">
+                                <div class="absolute ml-[-20px] mt-[-15px] w-[50px]">
+                                    <img src="images/Support.png" alt="truck img" class="p-2">
+                                </div>
+                            </div>
+                            <h3 class="text-[16px]  font-semibold mb-5">24/7 Support</h3>
+                            <p class="text-[14px] font-normal text-[#8B8E99]">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla  vivethe as it was</p>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="bg-[#dee3e6] relative rounded-full h-[35px] w-[40px] ml-5 mt-10">
+                                <div class="absolute ml-[-20px] mt-[-15px] w-[50px]">
+                                    <img src="images/Return.png" alt="truck img" class="p-2">
+                                </div>
+                            </div>
+                            <h3 class="text-[16px]  font-semibold mb-5">Hassle Free Returns</h3>
+                            <p class="text-[14px] font-normal text-[#8B8E99]">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla  vivethe as it was</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-[full] lg:w-[60%] md:flex justify-end items-center mt-10 md:mt-36">
+                    <img src="images/why-choose-us.png" alt="image" class=" w-[full] lg:w-[70%] sm:p-5">
+                </div>
+            </div>
+        </section>
+    </section>
+
+<!-- Service section -->
+    <section class="py-20 bg-[#eff3f2]" id="services">
+        <section class="w-[80%] lg:w-[90%] m-auto lg:flex justify-center items-center">
+            <div class="grid grid-cols-2 relative md:w-[90%] mx-auto lg:w-[45%] left-0">
+                <div class="col-span-1 right-0 left-0 top-0"><img src="images/help-3.png" alt="" class= "w-[200px] h-[250px] md:w-[500px] md:h-[450px] lg:w-[350px] lg:h-[400px]"></div>
+                <div class="col-span-1"><img src="images/help-2.png" alt="" class="w-[90px] h-[90px] md:w-[200px] h-[200px] lg:w-[150px] lg:h-[150px]"></div>
+                <div class="absolute left-[140px] top-[90px] lg:left-[280px] md:left-[250px] lg:top-[150px] md:top-[200px]"><img src="images/help-1.png" alt="" class="h-[200px] w-[150px] md:h-[260px] md:w-[230px] lg:w-[250px] lg:h-[280px] p-2"></div>
+            </div>
+            <div class="w-[full] lg:w-[45%] left-0 mt-40 lg:mt-0">
+                <h3 class="text-[40px] font-semibold leading-tight mb-5">We help you make <br> Modern Interior Design</h3>
+                <p class=" mb-5 text-[#8B8E99] text-[16px]">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done. the this is a long post for the text. This small text has to be place here, since this is a place holder. You can also chane it.</p>
+                <ul class="grid grid-cols-2 gap-7 lg:gap-5 ml-5 mb-6 list-disc marker:text-[#35736E] marker:text-[20px]" id="items-list">
+                    <li class="col-span-1  text-[#8B8E99] text-[16px]">Donec mattis porta eros, let <br> aliquet finibus ri</li>
+                    <li class="col-span-1  text-[#8B8E99] text-[16px]">Donec mattis porta eros, let <br> aliquet finibus ri</li>
+                    <li class="col-span-1 mb-5  text-[#8B8E99] text-[16px]">Donec mattis porta eros, let <br> aliquet finibus ri</li>
+                    <li class="col-span-1 mb-5  text-[#8B8E99] text-[16px]">Donec mattis porta eros, let <br> aliquet finibus ri</li>
+                </ul>
+                <a href="#" class="px-10 py-2  bg-[#35736E] rounded-full text-[16px] font-normal text-white">Explore</a>
+            </div>
+        </section>
+    </section>
+
+<!-- Explore section -->    
+    <section class="py-20 bg-[#eff3f2]" id="explore">
+        <section class="w-[80%] m-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="col-span-1 flex justify-center items-center">
+                    <div class="bg-[#b6cac9] h-[120px] w-[120px] rounded-xl relative"><img src="images/product-1.png" alt="" class="absolute mt-[-40px] w-[full]"></div>
+                    <div class="ml-5">
+                        <h3 class="text-[20px] font-semibold mb-3">Modern Chair</h3>
+                        <p class="text-[16px] font-normal text-[#8B8E99] mb-3">Donec mattis porta eros, <br> aliquet finibus risus  <br>interdum at.</p>
+                        <p class="text-[16px] font-semibold text-[#7c7a7b] cursor-pointer">Read More</p>
+                    </div>
+                </div>
+                <div class="col-span-1 flex justify-center items-center">
+                    <div class="bg-[#b6cac9] h-[120px] w-[120px] rounded-xl relative"><img src="images/product-2.png" alt="" class="absolute mt-[-30px] w-[full] h-[150px]"></div>
+                    <div class="ml-5">
+                        <h3 class="text-[20px] font-semibold mb-3">Kruzi Aero</h3>
+                        <p class="text-[16px] font-normal text-[#8B8E99] mb-3">Donec mattis porta eros, <br> aliquet finibus risus <br> interdum at.</p>
+                        <p class="text-[16px] font-semibold text-[#7c7a7b] cursor-pointer">Read More</p>
+                    </div>
+                </div>
+                <div class="col-span-1 flex justify-center items-center">
+                    <div class="bg-[#b6cac9] h-[120px] w-[120px] rounded-xl relative"><img src="images/product-3.png" alt="" class="absolute mt-[-30px] w-[full] h-[150px]"></div>
+                    <div class="ml-5">
+                        <h3 class="text-[20px] font-semibold mb-3">Ergonmic chair</h3>
+                        <p class="text-[16px] font-normal text-[#8B8E99] mb-3">Donec mattis porta eros, <br> aliquet finibus risus <br> interdum at.</p>
+                        <p class="text-[16px] font-semibold text-[#7c7a7b] cursor-pointer">Read More</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+<!-- Testimonial section -->    
+    <section class="py-20 bg-[#eff3f2]">
+        <section class="w-[80%] m-auto">
+            <h3 class="text-[36px] font-semibold text-center mb-10">Testimonials</h3>
+            <div class="flex justify-between items-center">
+                <div class="bg-[#e3e3e3] rounded-full w-[50px] h-[50px] hidden lg:flex items-center justify-center cursor-pointer"><img src="images/arrow-left.png" alt="" class=" w-[20px] m-auto p-1"></div>
+                <div class="w-[full] lg:w-[60%] flex justify-center items-center"><p class="font-medium text-[16px] leading-loose">"Donec nibh magna, interdum quis massa sed, rhoncus laoreet quam. Mauris accumsan  felis fermentum euismod egestas. Mauris ante augue, cursus sit amet arcu a, maximus  suscipit nibh. Integer vel nibh tellus. Pellentesque in risus non dui venenatis sollicitudin  sed vitae diam. Fusce tincidunt nisl mi, at molestie odio accumsan non. Pellentesque ma"</p></div>
+                <div class="bg-[#ffd748] rounded-full w-[50px] h-[50px] hidden lg:flex items-center justify-center cursor-pointer"><img src="images/arrow-right.png" alt="" class=" w-[20px] m-auto p-1"></div>
+            </div>
+            <div class="pt-40 text-center">
+                <div class="flex justify-center items-center"><img src="images/profile.png" alt="profile-image"></div>
+                <h3 class="text-[18px] font-semibold">Zain Bin Noor</h3>
+                <p class="text-[14px] font-medium text-[#8B8E99]">CEO,Co-founder,XYZ inc.</p>
+            </div>
+        </section>
+    </section>
+
+<!-- Blog section -->    
+    <section class="pt-20 pb-40 md:pb-80  bg-[#eff3f2]" id="blog">
+        <section class="w-[80%] m-auto">
+            <div class="flex justify-between items-center">
+                <h3 class="text-[24px] md:text-[28px] font-semibold  mb-10">Recently Blog</h3>
+                <p class="text-[12px] md:text-[16px] font-semibold mb-10  border-b-4 border-[#ffd748] cursor-pointer">View All Posts</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                <div class="col-span-1 cursor-pointer">
+                    <img src="images/blog-1.png" alt="image" class="rounded-xl mb-7">
+                    <h3 class="text-[18px] font-semibold">First Time Home Owner Ideas</h3>
+                    <p class="text-[14px] font-semibold"><i class="font-normal">by</i> nana Ama <i class="font-normal">on</i> Nov 18th,2022</p>
+                </div>
+                <div class="col-span-1 cursor-pointer">
+                    <img src="images/blog-2.png" alt="image" class="rounded-xl mb-7">
+                    <h3 class="text-[18px] font-semibold">First Time Home Owner Ideas</h3>
+                    <p class="text-[14px] font-semibold"><i class="font-normal">by</i> nana Ama <i class="font-normal">on</i> Nov 18th,2022</p>
+                </div>
+                <div class="col-span-1 cursor-pointer">
+                    <img src="images/blog-3.png" alt="image" class="rounded-xl mb-7">
+                    <h3 class="text-[18px] font-semibold">First Time Home Owner Ideas</h3>
+                    <p class="text-[14px] font-semibold"><i class="font-normal">by</i> nana Ama <i class="font-normal">on</i> Nov 18th,2022</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+<!-- Contact section -->    
+    <section class="pb-10 border border-b-2" id="contact">
+        <section class="wrapper">
+            <div class="md:flex justify-between items-center mb-20">
+                <div class="md:w-[70%]">
+                    <div class="flex justify-start items-center mb-5 mt-3">
+                        <img src="images/mail.png" alt="mail-image" class="w-[26px] h-[26px] mb-1">
+                        <h3 class="text-[18px] font-semibold ml-2">Subscribe to Newsletter</h3>
+                    </div>
+                    <form action="">
+                        <div class="md:flex justify-start items-center">
+                                <input type="text" placeholder="Enter your name" class="border border-2 border-[#35736E]  rounded-lg h-10 w-60 p-3 text-black ">
+                                <div class="flex justify-start">
+                                    <input type="text" placeholder="Enter your e-mail" class="border border-2 border-[#35736E] rounded-lg md:ml-5 mt-3 md:mt-0  h-10 w-60 p-3 text-black">
+                                    <div class="bg-[#35736E] w-[45px] h-[40px] md:w-[40px] md:h-[35px] mt-3 md:mt-1 ml-5 rounded-md cursor-pointer">
+                                    <img src="images/send.png" alt="" class="p-1.5">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="hidden md:flex w-[full] md:w-[30%] mt-[-350px] md:mt-[-150px]">
+                    <img src="images/sofa.png" alt="sofa-image" class="w-[full]">
+                </div>
+            </div>
+            <div class="md:flex justify-start items-center">
+                <div class="w-[full] md:w-[35%]">
+                    <img src="images/logo-green.png" alt="logo-image" class="w-[70px] h-[30px] mb-3">
+                    <p class="text-[18px] font-normal text-[#8B8E99] mb-3">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done. the this is a long post for the text. This small text has to be place here, since this is</p>
+                    <div class="flex mt-8">
+                        <div class="bg-[#e3e3e3] rounded-full w-[50px] h-[50px] flex items-center justify-center  hover:bg-[#35736E]"><a href=""><img src="images/facebook.png" alt="" class=" w-[20px] m-auto p-0.5"></a></div>
+                        <div class="bg-[#e3e3e3] rounded-full w-[50px] h-[50px] flex items-center justify-center  ml-3 hover:bg-[#35736E]"><a href=""><img src="images/instagram.png" alt="" class=" w-[20px] m-auto"></a></div>
+                        <div class="bg-[#e3e3e3] rounded-full w-[50px] h-[50px] flex items-center justify-center  ml-3 hover:bg-[#35736E]"><a href=""><img src="images/twitter.png" alt="" class=" w-[20px] m-auto"></a></div>
+                        <div class="bg-[#e3e3e3] rounded-full w-[50px] h-[50px] flex items-center justify-center  ml-3 hover:bg-[#35736E]"><a href=""><img src="images/linkedin-in.png" alt="" class=" w-[20px] m-auto p-0.5"></a></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-14 ml-10 mt-10 md:mt-0">
+                    <ul>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">About Us</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Services</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Blog</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Contact Us</li>
+                    </ul>
+                    <ul>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Support</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Knowledge base</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Live Chat</li>
+                    </ul>
+                    <ul>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Jobs</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Our team</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Leadership</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Privacy Policy</li>
+                    </ul>
+                    <ul>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Nordic Chair</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Kruzo Aero</li>
+                        <li class="text-[16px] font-normal text-[#8B8E99] mb-3">Ergonomic</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+
+<!-- Footer -->
+    <footer class="py-10">
+        <div class="text-center flex justify-center md:justify-end items-center md:mr-60 md:mb-32">
+            <p class="text-[12px] md:text-[16px] font-medium text-[#8B8E99] mr-5">Terms&Conditions</p>
+            <p class="text-[12px] md:text-[16px] font-medium text-[#8B8E99]">Privacy Policy</p>
+        </div>
+        <div class="text-center">
+            <p class="text-[12px] md:text-[16px] font-medium text-[#8B8E99]">Copyright 2022 zainalo00769@gmail.com,All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const navlinks=document.querySelector('.nav-links')
+        const home=document.querySelector('.home')
+        function ontogglemenu(e){
+            e.name= e.name==='menu' ? 'close' : 'menu';
+            navlinks.classList.toggle('top-[15%]')
+            home.classList.toggle('mt-[200px]')
+            
+        }
+    </script>
+    
+</body>
+</html>
+
